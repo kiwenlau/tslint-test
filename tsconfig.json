@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "outDir": "./built",
+        "allowJs": true,
+        "target": "es5",
+        "typeRoots": ["node_modules/@types", "typings"]
+    },
+    "include": ["./src/**/*", "./typings/**/*"],
+    "exclude": ["node_modules"]
+}

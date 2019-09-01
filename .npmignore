@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# But not these files...
+!release/fundebug.2.0.0.min.js
+!typings/fundebug.d.ts
+!package.json
+

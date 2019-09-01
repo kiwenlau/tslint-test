@@ -1,4 +1,33 @@
-TSLint only checks src directory
+Why dos TSLint only checks src directory?
+
+tsconfig.json
+
+```json
+{
+    "compilerOptions": {
+        "outDir": "./built",
+        "allowJs": true,
+        "target": "es5",
+        "typeRoots": ["node_modules/@types", "typings"]
+    },
+    "include": ["./src/**/*", "./typings/**/*"],
+    "exclude": ["node_modules"]
+}
+```
+
+tslint.json
+
+```json
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {},
+    "rulesDirectory": []
+}
+```
 
 #### Check the whole project
 
